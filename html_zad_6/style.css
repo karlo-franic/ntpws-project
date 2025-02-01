@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 0px 0;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    background: url('img/banner-image.jpg') no-repeat center center/cover;
+    aspect-ratio: 3 / 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+.nav-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px 20px;
+}
+
+figure {
+    padding: 5px;
+    border: 3px solid #333;
+    float: left; 
+    margin: 0 20px 20px 0;
+    max-width: 40%;
+}
+
+.fig-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.figcap-img {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.article img {
+    width: 150px;
+    margin: 20px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.article-content {
+    flex: 1;
+    margin: 0px 20px;
+}
+
+.article-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.article-content p {
+    margin: 5px 0;
+}
+
+.article-content a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.article-content a:hover {
+    text-decoration: underline;
+}
+
+.article img {
+    margin: 0 auto 10px;
+}
+
+.fig-art {
+    width: 130px;
+    height: auto;
+}
+
+.fig-img-art {
+    width: 130px;
+    height: 100px;
+}
+
+.figcap-img-art {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
