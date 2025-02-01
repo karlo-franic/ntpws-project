@@ -24,7 +24,14 @@
 
         else if (($_SESSION['user']['role'] == 'editor') || ($_SESSION['user']['role'] == 'user')) {
 
-            include("admin/news.php");
+            if (!isset($_GET['action'])) { include("admin/news.php"); }
+
+            if (isset($_GET['action'])) {
+
+                if ($_GET['action'] == 2) { include("admin/news.php"); }
+
+                else if ($_GET['action'] == 3) { include("admin/news_edit.php"); }
+            }
         }
 	}
 	else {

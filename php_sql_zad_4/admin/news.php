@@ -185,10 +185,6 @@
                 $result = @mysqli_query($MySQL, $query_check);
             }
 
-            if ($_POST['action'] == "edit") {
-
-            }
-
             echo '<meta http-equiv="refresh" content="0">';
         }
     }
