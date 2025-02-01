@@ -67,7 +67,7 @@ else if ($_POST['_action_'] == TRUE) {
         $pass_hash = password_hash($_POST['password'], PASSWORD_DEFAULT, ['cost' => 12]);
         
         $query_check  = "INSERT INTO users (first_name, last_name, email, password, country, city, address, date_of_birth, role)";
-        $query_check .= " VALUES ('" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['email'] . "', '" . $pass_hash . "', '" . $_POST['country'] . "', '" . $_POST['city'] . "', '" . $_POST['address'] . "', '" . $_POST['birthday'] . ", 'user')";
+        $query_check .= " VALUES ('" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['email'] . "', '" . $pass_hash . "', '" . $_POST['country'] . "', '" . $_POST['city'] . "', '" . $_POST['address'] . "', '" . $_POST['birthday'] . "', 'user')";
         $result = @mysqli_query($MySQL, $query_check);
         
         echo '<p>' . ucfirst(strtolower($_POST['firstname'])) . ' ' .  ucfirst(strtolower($_POST['lastname'])) . ', thank you for registration </p>
